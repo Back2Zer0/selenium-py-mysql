@@ -26,7 +26,7 @@ Csv能够将爬取到的信息，包括存储到数据库中的信息以csv表�
 
 ## 功能模块的总体设计
 
-![image](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps1.jpg) 
+![image](https://github.com/Back2Zer0/selenium-py-mysql/blob/master/wps1.jpg) 
 
 代码中用了很多函数实现用户交互，包括爬虫时目标产品信息的输入，对mysql数据库进行操作时的选择等。这样能让功能函数的使用更加灵活，扩展性强。将爬虫模块和数据库模块划分独立，并尽量完善其功能，方便后续信息的爬取和调整，增强程序鲁棒性。并且sql里特意设立了一个summary表，来存储用户操作过的所有信息，并结合csv模块存储本地。
 
