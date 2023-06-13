@@ -26,7 +26,7 @@ Csv能够将爬取到的信息，包括存储到数据库中的信息以csv表�
 
 ## 功能模块的总体设计
 
-![image text](https://github.com/Back2Zer0/selenium-py-mysq\wps1.jpg) 
+![image](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps1.jpg) 
 
 代码中用了很多函数实现用户交互，包括爬虫时目标产品信息的输入，对mysql数据库进行操作时的选择等。这样能让功能函数的使用更加灵活，扩展性强。将爬虫模块和数据库模块划分独立，并尽量完善其功能，方便后续信息的爬取和调整，增强程序鲁棒性。并且sql里特意设立了一个summary表，来存储用户操作过的所有信息，并结合csv模块存储本地。
 
@@ -40,7 +40,7 @@ MySql:
 
 （不建议大家在项目中直接使用root超级管理员账号访问数据库，这样做实在是太危险了。我们可以使用下面的命令创建名为guest的用户并为其授权）
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps2.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps2.jpg) 
 
 初始化是这个样子的。
 
@@ -56,21 +56,21 @@ MySql:
 
 设置 mysql 数据源(连接你的mysql)
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps3.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps3.jpg) 
 
 下载所需要的插件
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps4.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps4.jpg) 
 
 这里可以看到配置成功了。可以直接操作mysql终端，也可以在pycharm里通过游标对象向数据库服务器发出SQL语句。
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps5.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps5.jpg) 
 
  
 
 **3.初始化主函数模块**
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps6.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps6.jpg) 
 
  
 
@@ -84,7 +84,7 @@ MySql:
 
  
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps7.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps7.jpg) 
 
 爬虫模块主要利用selenium，也就是webdriver来唤醒chrome浏览器，从而以浏览器客户端身份得到目标网页服务器传来的信息。
 
@@ -92,7 +92,7 @@ MySql:
 
 **5.数据库模块**
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps8.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps8.jpg) 
 
 数据库模块有很多函数是对应mysql的操作语句的。实际上这些函数的内容结构大差不差，都是连接mysql后利用游标向mysql发送指令，指令则是这些函数主要的不同之处。
 
@@ -100,7 +100,7 @@ MySql:
 
 **6.表格文件模块**
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps9.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps9.jpg) 
 
  
 
@@ -130,13 +130,13 @@ MySql:
 
  
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps10.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps10.jpg) 
 
 **开始界面：**
 
 **选择1，爬取农产品信息**
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps11.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps11.jpg) 
 
 出现了预设的农产品名称，也可以自己输入其他产品。
 
@@ -144,7 +144,7 @@ MySql:
 
 到mysql中查看收集到的茄子销售信息：
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps12.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps12.jpg) 
 
 爬取到的数百条茄子的商品名，对应的价格、月销量、商家。
 
@@ -158,23 +158,23 @@ MySql:
 
 （当前文件夹的文件）
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps13.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps13.jpg) 
 
 操作后
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps14.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps14.jpg) 
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps15.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps15.jpg) 
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps16.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps16.jpg) 
 
  
 
 **删除存储茄子信息的表**
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps17.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps17.jpg) 
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps18.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps18.jpg) 
 
  
 
@@ -188,7 +188,7 @@ MySql:
 
 操作已有的数据表中的数据
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps19.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps19.jpg) 
 
 （以 白菜 表为例）
 
@@ -198,7 +198,7 @@ MySql:
 
 **查找一个数据**
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps20.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps20.jpg) 
 
 找到了商家为“密水农家”的商铺信息
 
@@ -210,9 +210,9 @@ MySql:
 
  
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps21.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps21.jpg) 
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps22.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps22.jpg) 
 
 ---
 
@@ -220,17 +220,17 @@ MySql:
 
 **添加回来这个数据（一次添加两列数据在表中）**
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps23.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps23.jpg) 
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps24.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps24.jpg) 
 
 加回来了！
 
 **删除一个表**
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps25.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps25.jpg) 
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps26.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps26.jpg) 
 
 该表不见了！
 
@@ -250,8 +250,8 @@ MySql:
 
 示例：mysql插入语句中存在python列表变量res
 
-![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps27.jpg) 
+![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps27.jpg) 
 
  
 
-2.运行时报了一个错误‘not all arguments converted during string ![img](file:///C:\Users\fancyzzz\AppData\Local\Temp\ksohtml11808\wps28.jpg)formatting’，以为是数据输入有问题，结果是游标发送命令的execute函数，多写了一个参数。
+2.运行时报了一个错误‘not all arguments converted during string ![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps28.jpg)formatting’，以为是数据输入有问题，结果是游标发送命令的execute函数，多写了一个参数。
