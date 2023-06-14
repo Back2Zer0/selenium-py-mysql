@@ -41,7 +41,8 @@ MySql:
 
 （不建议大家在项目中直接使用root超级管理员账号访问数据库，这样做实在是太危险了。我们可以使用下面的命令创建名为guest的用户并为其授权）
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps2.jpg) 
+![wps2](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/40669898-1bc2-4d43-a092-7af03fc97022)
+
 
 初始化是这个样子的。
 
@@ -57,23 +58,27 @@ MySql:
 
 设置 mysql 数据源(连接你的mysql)
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps3.jpg) 
+
+![wps3](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/eb36cb7c-619c-49ed-88b8-f7d663fd4dfe)
 
 下载所需要的插件
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps4.jpg) 
+
+![wps4](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/d0485275-9c11-4387-99e1-0f05811ec833)
 
 这里可以看到配置成功了。可以直接操作mysql终端，也可以在pycharm里通过游标对象向数据库服务器发出SQL语句。
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps5.jpg) 
 
- 
+
+ ![wps5](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/44585c4b-3487-4d6c-9dae-5530c28fe320)
+
 
 **3.初始化主函数模块**
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps6.jpg) 
 
- 
+
+ ![wps6](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/213bb83e-2bc3-49d2-81a4-3ee43b67b856)
+
 
  
 
@@ -85,7 +90,8 @@ MySql:
 
  
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps7.jpg) 
+![wps7](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/88864296-98aa-4a2a-87f7-8bc952ab8c17)
+
 
 爬虫模块主要利用selenium，也就是webdriver来唤醒chrome浏览器，从而以浏览器客户端身份得到目标网页服务器传来的信息。
 
@@ -93,7 +99,8 @@ MySql:
 
 **5.数据库模块**
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps8.jpg) 
+
+![wps8](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/f4789b6d-6206-4029-9261-a8054aed819b)
 
 数据库模块有很多函数是对应mysql的操作语句的。实际上这些函数的内容结构大差不差，都是连接mysql后利用游标向mysql发送指令，指令则是这些函数主要的不同之处。
 
@@ -101,9 +108,10 @@ MySql:
 
 **6.表格文件模块**
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps9.jpg) 
+
 
  
+![wps9](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/fad69ce6-9633-41b0-874c-07ff064917b6)
 
  
 
@@ -130,14 +138,16 @@ MySql:
 5.Windows10（其他环境难以保证正确性）
 
  
+![wps10](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/50290a46-79a5-49f8-ad1d-fc750ec4bca3)
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps10.jpg) 
+
 
 **开始界面：**
 
 **选择1，爬取农产品信息**
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps11.jpg) 
+![wps11](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/99856302-e504-49a8-86c2-38bfd2355b41)
+
 
 出现了预设的农产品名称，也可以自己输入其他产品。
 
@@ -145,7 +155,8 @@ MySql:
 
 到mysql中查看收集到的茄子销售信息：
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps12.jpg) 
+![wps12](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/a44d4c64-eb2f-4b26-91e0-d044653ab8c7)
+
 
 爬取到的数百条茄子的商品名，对应的价格、月销量、商家。
 
@@ -159,23 +170,21 @@ MySql:
 
 （当前文件夹的文件）
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps13.jpg) 
+
+![wps13](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/4088be5e-d22d-4907-abdf-9661693b6119)
 
 操作后
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps14.jpg) 
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps15.jpg) 
+![wps14](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/861ad3dd-f35b-4355-9eeb-176c3396fb02)
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps16.jpg) 
 
- 
+ ![wps15](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/d3186224-1262-4e89-9512-0cf0d3fa4fa5)
+
+![wps16](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/fe7ac8fa-2f39-4a06-bf5e-207f7ed06700)
 
 **删除存储茄子信息的表**
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps17.jpg) 
-
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps18.jpg) 
 
  
 
@@ -183,23 +192,28 @@ MySql:
 
 ——————————————————————————————
 
- 
+ ![wps17](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/0aac6185-59c2-4388-b6b2-31b25096b2cf)
+
+![wps18](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/aeb8b2a5-78b2-4368-a674-87fbb77bb964)
 
  
 
 操作已有的数据表中的数据
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps19.jpg) 
+
 
 （以 白菜 表为例）
 
  
 
- 
+![wps19](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/ba68a1a7-a666-4e61-a2d5-fc413ac0be10)
+
+
 
 **查找一个数据**
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps20.jpg) 
+
+![wps20](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/93028934-d3f5-4afa-8520-3c860458d8cb)
 
 找到了商家为“密水农家”的商铺信息
 
@@ -211,9 +225,11 @@ MySql:
 
  
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps21.jpg) 
+![wps21](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/069169d3-23f5-4504-aee1-52ba2f3fcc0c)
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps22.jpg) 
+
+![wps22](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/eb3fac37-d90b-4c35-9762-1159f7d5435f)
+
 
 ---
 
@@ -221,17 +237,17 @@ MySql:
 
 **添加回来这个数据（一次添加两列数据在表中）**
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps23.jpg) 
+![wps23](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/ed3fca4a-ea93-4216-85fe-5ad87527d3f9)
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps24.jpg) 
+![wps24](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/b9a87383-8852-4d02-900a-2d33c2bde8bf)
 
 加回来了！
 
 **删除一个表**
+![wps25](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/0f30750b-bea6-43a3-b185-78334984915c)
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps25.jpg) 
+![wps26](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/84e7d35b-7f5b-419d-9dbc-96a8920b1e73)
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps26.jpg) 
 
 该表不见了！
 
@@ -251,8 +267,12 @@ MySql:
 
 示例：mysql插入语句中存在python列表变量res
 
-![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps27.jpg) 
 
- 
 
-2.运行时报了一个错误‘not all arguments converted during string ![img](https://github.com/Back2Zer0/selenium-py-mysq/picture/wps28.jpg)formatting’，以为是数据输入有问题，结果是游标发送命令的execute函数，多写了一个参数。
+ ![wps27](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/95fd9892-db04-46d0-9701-01f14e14cb62)
+
+
+2.运行时报了一个错误‘not all arguments converted during string formatting’，以为是数据输入有问题，结果是游标发送命令的execute函数，多写了一个参数。
+
+![wps28](https://github.com/Back2Zer0/selenium-py-mysql/assets/101703195/7846be99-b41c-4102-a917-0e231dd67d64)
+
